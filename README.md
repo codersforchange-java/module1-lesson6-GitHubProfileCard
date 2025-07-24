@@ -12,7 +12,7 @@ This exercise will help you practice **Git version control** and **GitHub collab
 
 ## 🚀 Instructions
 
-### Exercise 1: My First Fork & Clone
+## Exercise 1: My First Fork & Clone
 
 **Goal:** Get your own personal copy of this project on your computer.
 
@@ -36,37 +36,33 @@ Click "Create Fork" and wait for the fork processing to complete.
 4. Paste the URL you copied and choose a location on your computer to save the project.
 5. Open the cloned project folder in VS Code. Visual Studio might automatically ask you to open the folder in a new window. Click **"Yes"** to open it in a new window.
 
-### Exercise 2: The Feature Branch Workflow
-
-**Goal:** Update your profile card on a safe, separate branch.
-
-1.  **Create a New Branch:** In the bottom-left corner of VS Code, click on the branch name (it should say `main`). From the menu, select **"Create new branch"**. Name your new branch `feature/add-profile-name` and press Enter.
-2.  **Make a Code Change:**
-    * Open the file: `src/com/codersforchange/profile/ProfileCard.java`.
-    * Find the line with the placeholder text `[YOUR GITHUB USERNAME HERE]`.
-    * Replace that placeholder text with your actual GitHub username.
-3.  **Stage & Commit:**
-    * Go to the **Source Control** panel in VS Code.
-    * Click the **plus icon (+)** next to the `ProfileCard.java` file to stage it.
-    * In the "Message" box, type a clear commit message like `feat: Add GitHub username to profile card`.
-    * Click the **checkmark icon** to commit your change.
-
-### Exercise 3: Pushing and Merging a Pull Request
-
-**Goal:** Publish your updated profile card and merge it.
-
-1.  **Push Your Branch:** In VS Code, click the **"Publish Branch"** button to upload your new branch and its commit to your GitHub repository.
-2.  **Create a Pull Request (PR):**
-    * Open your browser again and go to your forked repository on GitHub. You should see a banner prompting you to **"Compare & pull request"**. Click it.
-3.  **Merge Your Pull Request:**
-    * Give your Pull Request a title, like "Update Profile Card".
-    * Click **"Create pull request"**, and on the next screen, click **"Merge pull request"** and confirm.
-
-**🥳 Congratulations! You have personalized your profile card and completed the fundamental workflow used by developers every day!**
 
 ---
 
-## 📂 Project Structure
+## Exercise 2: The Feature Branch Workflow
+
+**Goal:** Update your profile card on a safe, separate branch.
+
+---
+
+### 1. Create a New Branch
+In the bottom-left corner of VS Code, click on the branch name (it should say `main`). 
+
+![vsc-branch](assets/branch-button.png)
+
+From the menu, select **"Create new branch"**. Name your new branch `feature/add-profile-name` and press Enter.
+
+![new-branch](assets/new-branch.png)
+
+---
+
+### 2. Make a Code Change
+ * Open the file: `src/com/codersforchange/profile/ProfileCard.java`.
+ * Find the line with the placeholder text `[YOUR GITHUB USERNAME HERE]`.
+ * Replace that placeholder text with your actual GitHub username.
+
+
+### 📂 Project Structure
 
 This project follows a standard Java project structure:
 
@@ -79,6 +75,49 @@ src/
           profile/
             ProfileCard.java   # The file you'll be modifying
 ```
+
+---
+
+### 3. Stage & Commit
+ * Go to the  ![source-control](assets/source-control.png)  **Source Control** panel in VS Code.
+ * Click the **plus icon (+)** next to the `ProfileCard.java` file to stage it.
+
+![commit](assets/commit.png)
+
+ * In the "Message" box, type a clear commit message like `feat: Add GitHub username to profile card`.
+ * Click the **Commit** button to commit your change.
+
+---
+
+## Exercise 3: Pushing and Merging a Pull Request
+
+**Goal:** Publish your updated profile card and merge it.
+
+### 1.  **Push Your Branch:** 
+
+In VS Code, click the **"Publish Branch"** button to upload your new branch and its commit to your GitHub repository.
+
+![publish-branch](assets/publish-branch.png)
+
+---
+
+### 2.  **Create a Pull Request (PR):**
+
+Open your browser again and go to your forked repository on GitHub. You should see a banner prompting you to **"Compare & pull request"**. Click it.
+
+![compare-pull-request](assets/compare-pull-request.png)
+
+---
+
+### 3.  **Merge Your Pull Request:**
+
+* Give your Pull Request a title, like "Update Profile Card".
+* Click **"Create pull request"**, and on the next screen, click **"Merge pull request"** and confirm.
+
+---
+
+### 🥳 Congratulations! 
+You have personalized your profile card and completed the fundamental workflow used by developers every day!**
 
 ---
 
