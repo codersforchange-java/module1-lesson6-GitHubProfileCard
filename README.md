@@ -17,12 +17,24 @@ This exercise will help you practice **Git version control** and **GitHub collab
 **Goal:** Get your own personal copy of this project on your computer.
 
 1.  **Fork this Repository:** Click the **"Fork"** button in the top-right corner of this page. This creates your own copy of the project on your GitHub account.
+
+![fork-button](assets/fork-1.png)
+
+![fork-button](assets/fork-2.png)
+
+Click "Create Fork" and wait for the fork processing to complete.
+
 2.  **Clone Your Fork:**
     * Navigate to **your forked repository** on GitHub (the URL should now have your username).
-    * Click the green **"< > Code"** button and copy the **HTTPS URL**.
-    * In Visual Studio Code, open the Command Palette, type `Git: Clone`, and press Enter.
-    * Paste the URL you copied and choose a location on your computer to save the project.
-    * Open the cloned project folder in VS Code.
+    * Click the ![code-button](assets/code-button.png) button and copy the **HTTPS URL**.
+  
+![clone-button](assets/clone-button.png)
+
+3. In Visual Studio Code, open the Command Palette, type `Git: Clone`, and press Enter. You can use the shortcut `Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (Mac) to open the Command Palette. Alternatively you can use the "View" menu and select "Command Palette".
+
+   ![vsc-clone](assets/vsc-clone.png)
+4. Paste the URL you copied and choose a location on your computer to save the project.
+5. Open the cloned project folder in VS Code. Visual Studio might automatically ask you to open the folder in a new window. Click **"Yes"** to open it in a new window.
 
 ### Exercise 2: The Feature Branch Workflow
 
