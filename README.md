@@ -1,65 +1,72 @@
-# Exercise: [Exercise Name]
+# Module 1 - Lesson 6 - Exercise - My First Git Workflow: The Profile Card
 
 ## 📝 Description
 
-Welcome to the exercise! The goal of this exercise is to help you get comfortable with **[main programming concepts involved]**. You will create a simple program that **[brief, one-sentence description of the exercise]**.
+Welcome to the exercise! The goal of this exercise is to help you get comfortable with **Git and GitHub workflows**. You will create a simple program that allows you to practice forking, cloning, branching, committing, and creating pull requests on GitHub.
 
 ## 🎯 Learning Goal
 
-This exercise will help you practice **[specific programming skill #1]** and **[specific programming skill #2]**.
+This exercise will help you practice **Git version control** and **GitHub collaboration** by walking you through the complete workflow of making changes to a project and contributing them back.
 
 ---
 
 ## 🚀 Instructions
 
-### 1. Open Visual Studio Code
-Launch your Visual Studio Code editor.
+### Exercise 1: My First Fork & Clone
 
-### 2. Open the Project Folder
-In the VS Code top menu, go to **File > Open Folder...** and select the folder of this exercise that you just unzipped.
+**Goal:** Get your own personal copy of this project on your computer.
 
-![vscode-open-folder](assets/open-folder.png)
+1.  **Fork this Repository:** Click the **"Fork"** button in the top-right corner of this page. This creates your own copy of the project on your GitHub account.
+2.  **Clone Your Fork:**
+    * Navigate to **your forked repository** on GitHub (the URL should now have your username).
+    * Click the green **"< > Code"** button and copy the **HTTPS URL**.
+    * In Visual Studio Code, open the Command Palette, type `Git: Clone`, and press Enter.
+    * Paste the URL you copied and choose a location on your computer to save the project.
+    * Open the cloned project folder in VS Code.
 
-This will open the entire project in VS Code, and you're ready to start working!
+### Exercise 2: The Feature Branch Workflow
+
+**Goal:** Update your profile card on a safe, separate branch.
+
+1.  **Create a New Branch:** In the bottom-left corner of VS Code, click on the branch name (it should say `main`). From the menu, select **"Create new branch"**. Name your new branch `feature/add-profile-name` and press Enter.
+2.  **Make a Code Change:**
+    * Open the file: `src/com/codersforchange/profile/ProfileCard.java`.
+    * Find the line with the placeholder text `[YOUR GITHUB USERNAME HERE]`.
+    * Replace that placeholder text with your actual GitHub username.
+3.  **Stage & Commit:**
+    * Go to the **Source Control** panel in VS Code.
+    * Click the **plus icon (+)** next to the `ProfileCard.java` file to stage it.
+    * In the "Message" box, type a clear commit message like `feat: Add GitHub username to profile card`.
+    * Click the **checkmark icon** to commit your change.
+
+### Exercise 3: Pushing and Merging a Pull Request
+
+**Goal:** Publish your updated profile card and merge it.
+
+1.  **Push Your Branch:** In VS Code, click the **"Publish Branch"** button to upload your new branch and its commit to your GitHub repository.
+2.  **Create a Pull Request (PR):**
+    * Open your browser again and go to your forked repository on GitHub. You should see a banner prompting you to **"Compare & pull request"**. Click it.
+3.  **Merge Your Pull Request:**
+    * Give your Pull Request a title, like "Update Profile Card".
+    * Click **"Create pull request"**, and on the next screen, click **"Merge pull request"** and confirm.
+
+**🥳 Congratulations! You have personalized your profile card and completed the fundamental workflow used by developers every day!**
 
 ---
 
-## 📂 Project Structure and Your Task
+## 📂 Project Structure
 
-Inside the project, you will find two main packages/directories in the `src` folder:
+This project follows a standard Java project structure:
 
-* `[com.codersforchange.exercise.code.here]`: This is where you will write your code. You are expected to modify the files within this package to complete the exercise.
-* `[com.codersforchange.must.not.touch]`: ⚠️ **IMPORTANT!** You must **not** edit any files inside this package. These files are used to test your code, and any changes will cause the tests to fail!
-
-![packages-explained](assets/packages-explained.png)
-
-Note: This image is just an example of how the project structure could look like. The actual project structure may be different!
-
-### ❔ Your Task:
-
-Navigate to the `[FileName.extension]` file inside the `[com.codersforchange.exercise.code.here]` package. Inside this file, you will need to:
-
-1.  **[Step 1: Describe the first specific action the student needs to take].**
-2.  **[Step 2: Describe the second specific action].**
-3.  **[Step 3: Describe the third specific action].**
-4.  ...and so on.
-
----
-
-## 🚀 Running the Program
-
-TODO: Explain how to run the program using the play button at the main method in VSC
-
----
-
-## ✅ Testing Your Work Locally
-
-Before you consider the exercise complete, you should run the provided unit tests to see if your code works as expected.
-
-In your IDE's file explorer, find the `[MainTest.java]` file within the `src/test/java/com/codersforchange/must/not/touch` folder. You should see a small "run" icon next to the test methods or the class name itself. Click it to execute the tests.
-
-* **✅ If all tests pass (you see green checkmarks), congratulations! You are on the right track.**
-* **❌ If any tests fail (you see red crosses), the output in the terminal will give you clues as to what might be wrong. Review the exercise requirements and your code, fix the issues, and run the tests again.**
+```
+src/
+  main/
+    java/
+      com/
+        codersforchange/
+          profile/
+            ProfileCard.java   # The file you'll be modifying
+```
 
 ---
 
